@@ -77,7 +77,8 @@ h1 a,
 img{
   max-width:100%;     /* lets the images take the full width of the screen */
 }
-h3{
+h3,
+h4{
   margin: 12px auto;            /*gives h3 some margin, turns text uppercase*/
   text-transform:uppercase;
 }
@@ -90,6 +91,7 @@ h3{
 }
 .col,
 .bio,
+.skills,
 .porfolio{
   margin:10px;
   min-height:250px;
@@ -103,10 +105,12 @@ a:hover{
   color:rgb(251, 4, 251);
 }
 
+.skills,
 .porfolio{
   min-height:auto;
   text-transform:uppercase;
   text-decoration: underline;
+  margin-bottom:0;
 }
 
 .bio{
@@ -119,11 +123,16 @@ a:hover{
 
 .box{
   flex-grow:2;
+  margin: 50px;
+}
+
+.box-7{
+  min-height: 0;
 }
 
 .phone,
 .email{
-  margin:12px auto;
+  margin-top:0;
   font-weight: 700;             /* gives the phone and email section bold lettering some letter spacing and some margin, and changes the text to black*/
   letter-spacing: 1.5px;
   color:black;
@@ -161,7 +170,7 @@ a:hover{
   .col{
     flex-basis: calc(50% - 20px);
     flex:1 30%;
-    margin:0 auto;
+    margin-bottom: 20px;
   }
 
   .top{
